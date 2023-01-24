@@ -14,9 +14,36 @@ tags:
 ![chemex](/img/chemex.jpg)
 
 ```
-This week we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts.
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
-In 1958, designers at the [Illinois Institute of Technology](https://www.spacefarm.digital) said that the Chemex Coffeemaker is *"one of the best-designed products of modern times"*, and so is included in the collection of the Museum of Modern Art in New York City.
+export default class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isValidated: false };
+  }
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch((error) => alert(error));
+  };
 ```
 
 ## The little secrets of Chemex brewing
