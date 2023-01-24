@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import logo from "../img/valmilogo.svg";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
+            <img src={logo} alt="Valmi.io" style={{ width: "140px" }} />
           </Link>
           {/* Hamburger menu */}
           <button
@@ -28,12 +28,12 @@ const Navbar = () => {
             <span />
           </button>
         </div>
-        <ul id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
+        <ul id="navMenu" className={` navbar-start navbar-menu ${isActive && "is-active"}`}>
             {/* TODO: inline override of padding is a result of refactoring
                 to a ul for accessibilty purposes, would like to see a css
                 re-write that makes this unneccesary.
              */}
-            <li className="navbar-item" style={{padding: "0px"}}>
+            {/* <li className="navbar-item" style={{padding: "0px"}}>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
@@ -41,6 +41,11 @@ const Navbar = () => {
             <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/products">
               Products
+            </Link>
+            </li>*/}
+            <li className="navbar-item" style={{padding: "0px"}}>
+            <Link className="navbar-item" to="/">
+              Home
             </Link>
             </li>
             <li className="navbar-item" style={{padding: "0px"}}>
@@ -53,15 +58,15 @@ const Navbar = () => {
               Contact
             </Link>
             </li>
-            <li className="navbar-item" style={{padding: "0px"}}>
+            {/* <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/contact/examples">
               Form Examples
             </Link>
-            </li>
+          </li>*/}
           <li className="navbar-end has-text-centered">
             <a
               className="navbar-item"
-              href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+              href="https://github.com/rajVarkala"
               target="_blank"
               rel="noopener noreferrer"
             >
