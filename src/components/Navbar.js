@@ -8,12 +8,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar is-transparent"
+      className="navbar "
       role="navigation"
       aria-label="main-navigation"
     >
-      <div className="container">
-        <div className="navbar-brand">
+      <div className="container ">
+        <div className="navbar-brand ">
           <Link to="/" className="navbar-item" title="Logo">
             <img src={logo} alt="Valmi.io" style={{ width: "140px" }} />
           </Link>
