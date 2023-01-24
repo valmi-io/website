@@ -15,5 +15,5 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
 # T﻿eam
 
-![Doremon](/img/coffee-gear.png "Doremon")
-![Doremon](/img/coffee-gear.png "Doremon")
+![Doremon1](/img/coffee-gear.png "Doremon")
+![Doremon2](/img/coffee-gear.png "Doremon")
