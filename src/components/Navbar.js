@@ -7,8 +7,11 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <nav
-      className="navbar "
+    <nav 
+    // style={{
+    //   backgroundColor:'rgba(255, 255, 255, 0)'
+    // }}
+      className="navbar"
       role="navigation"
       aria-label="main-navigation"
     >
