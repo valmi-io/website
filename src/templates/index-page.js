@@ -23,27 +23,26 @@ export const IndexPageTemplate = ({
   return (
     <div>
       <section className="section section--gradient">
-        <div className="container"> 
-                  <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <p>{mainpitch.description}</p>
-                    </div>
-                  </div>
+        <div className="container">
+          <div className="content">
+            <div className="tile">
+              <h1 className="title">{mainpitch.title}</h1>
+            </div>
+            <div className="tile">
+              <p>{mainpitch.description}</p>
+            </div>
+          </div>
 
-                  <div className="is-12">
-                    <h3 className="has-text-weight-semibold is-size-3">
-                      Latest stories
-                    </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Read more
-                      </Link>
-                    </div>
-                   
+          <div className="is-12">
+            <h3 className="has-text-weight-semibold is-size-3">
+              Latest stories
+            </h3>
+            <BlogRoll />
+            <div className="column is-12 has-text-centered">
+              <Link className="button is-link" to="/blog">
+                Read more
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -51,7 +50,7 @@ export const IndexPageTemplate = ({
   );
 };
 
-  /*
+/*
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />

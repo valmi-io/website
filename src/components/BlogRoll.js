@@ -50,10 +50,21 @@ const BlogRollTemplate = (props) => {
                 {post.excerpt}
                 <br />
                 <br />
-                <Link className="button" to={post.fields.slug}>
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  "justify-content": "flex-end",
+                }}
+                class="column "
+              >
+                <Link
+                  className="button is-text-right is-link"
+                  to={post.fields.slug}
+                >
                   More →
                 </Link>
-              </p>
+              </div>
             </article>
           </div>
         ))}
