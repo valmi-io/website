@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <nav
-      // style={{
-      // backgroundColor: "rgba(255, 255, 255, 0)",
-      //}}
-      className="navbar is-dark
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0)",
+      }}
+      className="navbar 
       "
       role="navigation"
       aria-label="main-navigation"
