@@ -9,8 +9,8 @@ const Navbar = () => {
   return (
     <nav
       // style={{
-      //   backgroundColor:'rgba(255, 255, 255, 0)'
-      // }}
+      // backgroundColor: "rgba(255, 255, 255, 0)",
+      //}}
       className="navbar is-dark
       "
       role="navigation"
@@ -55,7 +55,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
+          <li style={{ padding: "0px" }} className="navbar-item">
             <Link className="navbar-item" to="/blog">
               Blog
             </Link>
