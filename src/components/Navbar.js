@@ -11,7 +11,7 @@ const Navbar = () => {
       style={{
         backgroundColor: "rgba(255, 255, 255, 0)",
       }}
-      className="navbar 
+      className="navbar is-white
       "
       role="navigation"
       aria-label="main-navigation"
