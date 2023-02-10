@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "valmi.io - CDP kernel",
+    title: "valmi.io - test",
     description:
-      "valmi.io provides an open source CDP platform for the modern data stack.",
+      "valmi.io.",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
