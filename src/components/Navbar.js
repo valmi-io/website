@@ -73,7 +73,7 @@ const Navbar = () => {
           <li className="navbar-end has-text-centered">
             <a
               className="navbar-item"
-              href="https://github.com/rajVarkala"
+              href="https://github.com/valmi-io/valmi-activation"
               target="_blank"
               rel="noopener noreferrer"
             >
