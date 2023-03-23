@@ -5,9 +5,9 @@ image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience test
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title: What is Valmi.io?
+  title:  Collaborative CDP & Open source Data Activation (reverse ETL) Platform
   description: |
-    Building it out
+     Collaborative CDP & Open source Data Activation (reverse ETL) Platform
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that

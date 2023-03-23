@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
 import logo from "../img/valmilogo.svg";
-
+import GitHubButton from "react-github-btn";
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -32,10 +32,12 @@ const Navbar = () => {
             <span />
           </button>
         </div>
+
         <ul
           id="navMenu"
           className={` navbar-start navbar-menu ${isActive && "is-active"}`}
         >
+          
           {/* TODO: inline override of padding is a result of refactoring
                 to a ul for accessibilty purposes, would like to see a css
                 re-write that makes this unneccesary.
@@ -70,7 +72,9 @@ const Navbar = () => {
               Form Examples
             </Link>
           </li>*/}
+           
           <li className="navbar-end has-text-centered">
+           
             <a
               className="navbar-item"
               href="https://github.com/valmi-io/valmi-activation"
@@ -80,10 +84,23 @@ const Navbar = () => {
               <span className="icon">
                 <img src={github} alt="Github" />
               </span>
-            </a>
+          
+               </a>
+               <div style={{ marginTop: '1.1rem'  }} >
+               <GitHubButton type="stargazers"  namespace="valmi-io"  repo="valmi-activation"  aria-label="Star valmi-io/valmi-activation on GitHub"    data-icon="octicon-star"     
+  data-size="large"
+  data-show-count="true"  
+   href="https://github.com/valmi-io/valmi-activation">Follow @valmi.io</GitHubButton> 
+  </div> 
+               
+
           </li>
+         
+          
         </ul>
+        
       </div>
+      
     </nav>
   );
 };

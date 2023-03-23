@@ -6,8 +6,8 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
-
+import FullWidthImage from "../components/FullWidthImage"; 
+import GitHubButton from "react-github-btn";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
@@ -31,12 +31,13 @@ export const IndexPageTemplate = ({
             <div className="tile">
               <p>{mainpitch.description}</p>
             </div>
-          </div>
-
+          </div> 
+                   
           <div className="is-12">
             <h3 className="has-text-weight-semibold is-size-3">
               Latest stories
             </h3>
+            <div> &nbsp;</div>
             <BlogRoll />
             <div className="column is-12 has-text-centered">
               <Link className="button is-link" to="/blog">

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "valmi.io - test",
+    title: "valmi.io - Collaborative CDP & Open source Data Activation (reverse ETL) Platform",
     description:
-      "valmi.io.",
+      "valmi.io - Collaborative CDP & Open source Data Activation (reverse ETL) Platform",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

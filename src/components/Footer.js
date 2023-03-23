@@ -6,13 +6,12 @@ import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
-
 const Footer = () => {
   
     return (
       <footer   className="footer has-background-black has-text-white-ter ">
          
-              <div   className=" social is-4">
+              {/* <div   className=" social is-4">
                 <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
@@ -42,7 +41,10 @@ const Footer = () => {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-              </div> 
+              </div>  */}
+              
+
+              <span style={{"text-align": "right", "display":"block", "width" : "100%",  }}> © 2023 valmi.io. All rights reserved &nbsp; &nbsp;</span>
            
       </footer>
     );
