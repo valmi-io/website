@@ -9,7 +9,7 @@ import vimeo from "../img/social/vimeo.svg";
 const Footer = () => {
   
     return (
-      <footer   className="footer has-background-black has-text-white-ter ">
+      <footer  style={{"paddingTop": "0.5rem", "paddingBottom":"0.5rem","backgroundColor":"hsl(0, 0%, 96%)"}}>
          
               {/* <div   className=" social is-4">
                 <a title="facebook" href="https://facebook.com">
@@ -45,7 +45,7 @@ const Footer = () => {
               
 
               <span style={{"text-align": "right", "display":"block", "width" : "100%",  }}> © 2023 valmi.io. All rights reserved &nbsp; &nbsp;</span>
-           
+              
       </footer>
     );
 };
