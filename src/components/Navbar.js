@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
+import slack from "../img/slack_svg.svg";
+import twitter from "../img/twitter_svg.svg";
+
 import logo from "../img/valmilogo.svg";
 import GitHubButton from "react-github-btn";
 const Navbar = () => {
@@ -72,9 +75,36 @@ const Navbar = () => {
               Form Examples
             </Link>
           </li>*/}
-           
+
           <li className="navbar-end has-text-centered">
            
+           <a
+             className="navbar-item"
+             href="https://join.slack.com/t/valmiioworkspace/signup"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             <span className="icon">
+               <img src={slack} alt="Slack Community" />
+             </span>
+         
+              </a>
+              
+              
+ 
+           <a
+             className="navbar-item"
+             href="https://twitter.com/valmi_io"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             <span className="icon">
+               <img src={twitter} alt="Twitter" />
+             </span>
+         
+              </a>
+              
+               
             <a
               className="navbar-item"
               href="https://github.com/valmi-io/valmi-activation"
