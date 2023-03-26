@@ -80,7 +80,7 @@ const Navbar = () => {
            
            <a
              className="navbar-item"
-             href="https://join.slack.com/t/valmiioworkspace/signup"
+             href="https://join.slack.com/t/valmiioworkspace/shared_invite/zt-1s2uy2gtt-Op4PYzcDsWKPKhUby71~Og"
              target="_blank"
              rel="noopener noreferrer"
            >
