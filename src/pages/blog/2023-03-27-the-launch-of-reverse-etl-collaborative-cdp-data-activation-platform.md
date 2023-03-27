@@ -59,6 +59,7 @@ We will write up architectural details of the activation platform of [valmi.io](
 
 Github Repo - [https://github.com/valmi-io/valmi-activation](https://github.com/valmi-io/valmi-activation)
 
-# Look at this Video:
 
+**Checkout the demo sync from valmi.io.** 
+ 
 `youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`

@@ -11,13 +11,16 @@ export default class BlogIndexPage extends React.Component {
         <div>
       <section className="section section--gradient">
          
-      <div className="container">
-
+      <div className="container content">
+      <div className="columns">
+          <div className="column is-10 is-offset-1">
         <h1 className="title">Latest Stories</h1>
             <div className="content">
               <BlogRoll />
             </div>
-          </div>
+        </div>
+        </div>  
+        </div>
         
         </section>
         </div>

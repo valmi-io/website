@@ -31,44 +31,54 @@ export const IndexPageTemplate = ({
       <section className="section section--gradient">
         <div  className="container">
           <div className="content">
-            <div className="tile">
-              <h1 className="title">{mainpitch.title}</h1>
-            </div>
-            <div className="tile">
-              <p>{mainpitch.description_1}<a href="https://github.com/valmi-io/valmi-activation">(Github)</a>. {mainpitch.description_2}</p>
-            </div>
-            </div>
-              <div className="column is-12 has-text-centered">
+           <div className="columns">
+            <div className="column is-10 is-offset-1">
+                <div className="tile">
+                  <h1 className="title">{mainpitch.title}</h1>
+                </div>
+                <div className="tile">
+                  <p>{mainpitch.description_1}<a href="https://github.com/valmi-io/valmi-activation">(Github)</a>. {mainpitch.description_2}</p>
+                </div>
+                </div>
+                  
+                </div>
                 
-              <Link className="button is-link" to={mainpitch.demo}>
-                Try it now!
-              </Link>
             </div>
-            <div className="image" style={{
-              display: 'flex',
-              justifyContent: 'center',
-            }}>
-              
-            <GatsbyImage
-              image={mainpitch.image.childImageSharp.gatsbyImageData}
-              style={imageStyle}
-              alt={alt}
-            />
-            
-            
-          </div> 
-                   
-          <div className="is-12">
-            <h3 className="has-text-weight-semibold is-size-3">
-              Latest stories
-            </h3>
-            <div> &nbsp;</div>
-            <BlogRoll />
+            </div>
+
             <div className="column is-12 has-text-centered">
-              <Link className="button is-link" to="/blog">
-                Read more
-              </Link>
+                    
+                    <Link className="button is-link" to={mainpitch.demo}>
+                      Try it now!
+                    </Link>
+            <div className="image" style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}>
+                  
+              <GatsbyImage
+                image={mainpitch.image.childImageSharp.gatsbyImageData}
+                style={imageStyle}
+                alt={alt}
+              />
+              
+              
+            </div> 
+            <div className="columns">
+            <div className="column is-10 is-offset-1"> 
+            <div className="is-12">
+              <h3 style={{"textAlign":"left"}} className=" has-text-weight-semibold is-size-3">
+                Latest stories
+              </h3>
+              <div> &nbsp;</div>
+              <BlogRoll />
+              <div className="column is-12 has-text-centered">
+                <Link className="button is-link" to="/blog">
+                  Read more
+                </Link>
+              </div>
             </div>
+          </div>
           </div>
         </div>
       </section>

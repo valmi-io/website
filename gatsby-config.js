@@ -45,6 +45,7 @@ module.exports = {
       options: {
         plugins: [
           
+          `gatsby-remark-embed-video`, 
           'gatsby-remark-relative-images',
           {
             resolve: "gatsby-remark-images",
@@ -61,13 +62,7 @@ module.exports = {
               destinationDir: "static",
             },
           }, 
-          {
-            resolve: "gatsby-remark-embed-youtube",
-            options: {
-              width: 800,
-              height: 400
-            }
-          },
+          `gatsby-remark-responsive-iframe`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: { 
