@@ -20,7 +20,7 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-      <div style= {{ marginLeft: `8rem`,marginRight: `8rem` }} className="container content">
+      <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
              <h3 className="title is-size-3 has-text-weight-bold is-bold-light">

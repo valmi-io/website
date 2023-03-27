@@ -29,7 +29,7 @@ export const IndexPageTemplate = ({
   return (
     <div>
       <section className="section section--gradient">
-        <div  style= {{ marginLeft: `8rem`,marginRight: `8rem` }} className="container">
+        <div  className="container">
           <div className="content">
             <div className="tile">
               <h1 className="title">{mainpitch.title}</h1>
