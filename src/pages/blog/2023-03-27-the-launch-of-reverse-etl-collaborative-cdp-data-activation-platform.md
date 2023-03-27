@@ -62,4 +62,4 @@ Github Repo - [https://github.com/valmi-io/valmi-activation](https://github.com/
 
 **Checkout the demo sync from valmi.io.** 
  
-`youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`
+`youtube:https://youtu.be/UEC3-C4_7nk`
