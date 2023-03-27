@@ -5,9 +5,11 @@ image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience test
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
-  title:  Collaborative CDP & Open source Data Activation (reverse ETL) Platform
+  title:  Open source Data Activation (reverse ETL) Platform
   description: |
-     Collaborative CDP & Open source Data Activation (reverse ETL) Platform
+    We have released Open Source Data Activation Platform. Also known as reverse ETL Platform, It is built over the airbyte protocol. More connectors are on the way. Please try your first sync here.
+  demo: https://demo.valmi.io
+  image: /img/webimage.png
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that

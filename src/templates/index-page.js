@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
@@ -20,6 +21,11 @@ export const IndexPageTemplate = ({
 }) => {
   const heroImage = getImage(image) || image;
 
+  console.log("mainpitch.image: ", mainpitch.image);
+  const imageStyle = { borderRadius: "5px" };
+
+  const { alt = "", childImageSharp, my_image } = mainpitch.image;
+  
   return (
     <div>
       <section className="section section--gradient">
@@ -31,6 +37,25 @@ export const IndexPageTemplate = ({
             <div className="tile">
               <p>{mainpitch.description}</p>
             </div>
+            </div>
+              <div className="column is-12 has-text-centered">
+                
+              <Link className="button is-link" to={mainpitch.demo}>
+                Try it now!
+              </Link>
+            </div>
+            <div className="image" style={{
+              display: 'flex',
+              justifyContent: 'center',
+            }}>
+              
+            <GatsbyImage
+              image={mainpitch.image.childImageSharp.gatsbyImageData}
+              style={imageStyle}
+              alt={alt}
+            />
+            
+            
           </div> 
                    
           <div className="is-12">
@@ -121,6 +146,7 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
+  console.log(frontmatter);
   return (
     <Layout>
       <IndexPageTemplate
@@ -161,6 +187,12 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, width:500, layout:CONSTRAINED)
+            }
+          }
+          demo
         }
         description
         intro {
