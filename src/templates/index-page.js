@@ -29,13 +29,13 @@ export const IndexPageTemplate = ({
   return (
     <div>
       <section className="section section--gradient">
-        <div className="container">
+        <div  style= {{ marginLeft: `8rem`,marginRight: `8rem` }} className="container">
           <div className="content">
             <div className="tile">
               <h1 className="title">{mainpitch.title}</h1>
             </div>
             <div className="tile">
-              <p>{mainpitch.description}</p>
+              <p>{mainpitch.description_1}<a href="https://github.com/valmi-io/valmi-activation">(Github)</a>. {mainpitch.description_2}</p>
             </div>
             </div>
               <div className="column is-12 has-text-centered">
@@ -186,7 +186,8 @@ export const pageQuery = graphql`
         subheading
         mainpitch {
           title
-          description
+          description_1
+          description_2
           image {
             childImageSharp {
               gatsbyImageData(quality: 100, width:500, layout:CONSTRAINED)
