@@ -107,4 +107,6 @@ We will write up architectural details of the activation platform of [valmi.io](
 
 Github Repo - [https://github.com/valmi-io/valmi-activation](https://github.com/valmi-io/valmi-activation)
 
-<&lt;VIDEO DEMO of the product>>
+# Look at this Video:
+
+`youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`

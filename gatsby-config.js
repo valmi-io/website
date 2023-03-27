@@ -14,6 +14,7 @@ module.exports = {
         },
       },
     },
+    
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
@@ -59,6 +60,13 @@ module.exports = {
             options: {
               destinationDir: "static",
             },
+          }, 
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 400
+            }
           },
           {
             resolve: `gatsby-remark-prismjs`,
