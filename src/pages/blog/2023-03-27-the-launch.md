@@ -25,55 +25,7 @@ The event volume is huge - the picture shows aggregated events for the last seve
 
 Given the massive volumes of data, it is fiendishly cost-prohibitive to pipe all the raw events to these SaaS tools. Additionally, in the sample event below, there is PII. That makes sending user data to third-party processors carry economic risk post-GDPR. What are we to do? The Sun has shone, and the warehouses have risen from the cloud. With their rise, data can be **_centralized_** within the boundaries of an organization, and the need for piping data to third parties stands obviated. Now, combine the idea of a CDP with a warehouse, and you have a warehouse-based CDP. It is becoming all the rage, and for good reasons. Indeed in a similar vein, we use [Snowplow](https://snowplow.io/) to track and load behavioral data into our warehouse.
  
-```
-{ 
-  "_source": { 
-    "etl_tstamp": "2023-03-27T05:28:21.166Z", 
-    "geo_latitude": 11.5583,
-    "contexts_com_tusk_player_context_1": [
-      {
-        "score": 10000,
-        "diamonds": 0,
-        "music": 1,
-        "tier": 1,
-        "level": 8,
-        "sound": 1,
-        "name": "<redacted>",
-        "xp": 90.40000000000003,
-        "sp": 158
-      }
-    ], 
-    "network_userid": "568fc8db-95c6-44c1-b2fb-e6ab041127da", 
-    "geo_country": "KH", 
-    "user_ipaddress": "27.x.x.x", 
-    "geo_region": "12",
-    "geo_timezone": "Asia/Phnom_Penh",
-    "useragent": "snowplow/andr-1.7.1 android/12",
-    "event_name": "event", 
-    "dvce_sent_tstamp": "2023-03-27T05:28:03.530Z", 
-    "se_category": "ChipSelect", 
-    "user_id": "<redacted>",
-    "refr_urlquery": null,
-    "true_tstamp": null,
-    "geo_longitude": 104.9121,
-    "contexts_com_snowplowanalytics_snowplow_mobile_context_1": [
-      {
-        "osVersion": "11",
-        "osType": "android",
-        "deviceModel": "SM-T735",
-        "deviceManufacturer": "samsung",
-        "networkType": "offline"
-      }
-    ], 
-    "os_timezone": "Asia/Phnom_Penh", 
-    "geo_location": "11.5583,104.9121", 
-    "geo_city": "Phnom Penh",
-    "geo_region_name": "Phnom Penh" 
-  }
-  ...<redacted>...
-}
-```
-
+![](/img/code_img.png) 
 
 The move towards magnificent warehouses such as [Snowflake](https://www.snowflake.com/) was a fine one, but what of the chinks that erupted? Where was the simplicity of the earlier experience offered by the SaaS tools? At [Rudderstack](https://www.rudderstack.com/), which is a pioneer of warehouse-CDP and where I was fortunate to have played a part, I have quickly realized that any simple data use case requires a triad of personas - **_The Analytics Engineer, The data scientist, _**and**_ The Operations Executive._** 
 
