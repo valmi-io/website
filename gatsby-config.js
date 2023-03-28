@@ -3,8 +3,10 @@ module.exports = {
     title: "valmi.io - Collaborative CDP & Open Source Data Activation (reverse ETL) Platform",
     description:
       "valmi.io - Collaborative CDP & Open Source Data Activation (reverse ETL) Platform",
+    siteUrl: "https://www.valmi.io",
   },
   plugins: [
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",

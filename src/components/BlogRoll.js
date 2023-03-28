@@ -62,7 +62,7 @@ const BlogRollTemplate = (props) => {
                   className="button is-text-right is-link"
                   to={post.fields.slug}
                 >
-                  More →
+                  Expand →
                 </Link>
               </div>
             </article>
