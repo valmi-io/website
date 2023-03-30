@@ -17,7 +17,7 @@ tags:
 
 <font size="4">_A product model for a collaborative CDP & **[valmi.io](https://www.valmi.io/)** Open Source Data Activation (reverse ETL) platform built over airbyte protocol is embracing it._</font>
 
-_"It was the age of wisdom, It was the age of foolishness..."_ The age of smartphone apps was dawning. Wisdom stayed with the few who owned the app stores. Foolish were those who built apps for these stores. We started an indie game studio circa 2011 and engineered one of the first few games for the Android market. Now, there are probably a million or two of them on the market. We were certainly early and managed to reach over 25 million users across our portfolio. While most of our social casino portfolio waned due to increasing competition and the whims of the duopoly, [one](https://play.google.com/store/apps/dev?id=8815230470063088971) still shines. And, it generates a lot of data, a lot of user data.
+_"It was the age of wisdom, It was the age of foolishness..."_ The age of smartphone apps was dawning. Wisdom stayed with the few who owned the app stores. Foolish were those who built apps for these stores. We started an indie game studio circa 2011 and engineered one of the first few games for the Android market. Now, there are probably a million or two of them on the market. We were certainly early and managed to reach over 25 million users across our portfolio. While most of our game portfolio waned due to increasing competition and the whims of the duopoly, [one](https://play.google.com/store/apps/dev?id=8815230470063088971) still shines. And, it generates a lot of data, a lot of user data.
 
 ![](/img/metrics.png) 
 
