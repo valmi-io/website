@@ -83,11 +83,9 @@ We are looking for Engineering Interns to join our team in building valmi.io, th
 
 - Currently pursuing or recently graduated with a degree in Computer Science or a related field
 - Proficiency in Python / Javascript programming language
-- Familiarity with Python libraries and frameworks such as Flask or Django
 - Basic knowledge of SQL and/or NoSQL databases
 - Good understanding of object-oriented programming principles
 - Familiarity with Git or other version control systems
 - Strong analytical and problem-solving skills
-- Excellent communication and teamwork skills
  
 Please [email us here](/contact) if you are interested.
