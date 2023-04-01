@@ -7,7 +7,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage"; 
+import FullWidthImage from "../components/FullWidthImage";
 import GitHubButton from "react-github-btn";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -25,60 +25,62 @@ export const IndexPageTemplate = ({
   const imageStyle = { borderRadius: "5px" };
 
   const { alt = "", childImageSharp, my_image } = mainpitch.image;
-  
+
   return (
     <div>
       <section className="section section--gradient">
-        <div  className="container">
+        <div className="container">
           <div className="content">
-           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
                 <div className="tile">
                   <h1 className="title">{mainpitch.title}</h1>
                 </div>
                 <div className="tile">
                   <p>{mainpitch.description_1}<a href="https://github.com/valmi-io/valmi-activation">(Github)</a>. {mainpitch.description_2}</p>
                 </div>
-                </div>
-                  
-                </div>
-                
-            </div>
+              </div>
+
             </div>
 
-            <div className="column is-12 has-text-centered">
-                    
-                    <Link className="button is-link" to={mainpitch.demo}>
-                      Try it now!
-                    </Link>
+          </div>
+        </div>
+        <div className="container">
+
+          <div className="column is-12 has-text-centered">
+
+            <Link className="button is-link" to={mainpitch.demo}>
+              Try it now!
+            </Link>
             <div className="image" style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                }}>
-                  
+              display: 'flex',
+              justifyContent: 'center',
+            }}>
+
               <GatsbyImage
                 image={mainpitch.image.childImageSharp.gatsbyImageData}
                 style={imageStyle}
                 alt={alt}
               />
-              
-              
-            </div> 
+
+
+            </div>
             <div className="columns">
-            <div className="column is-10 is-offset-1"> 
-            <div className="is-12">
-              <h3 style={{"textAlign":"left"}} className=" has-text-weight-semibold is-size-3">
-                Latest stories
-              </h3>
-              <div> &nbsp;</div>
-              <BlogRoll />
-              <div className="column is-12 has-text-centered">
-                <Link className="button is-link" to="/blog">
-                  More Stories
-                </Link>
+              <div className="column is-10 is-offset-1">
+                <div className="is-12">
+                  <h3 style={{ "textAlign": "left" }} className=" has-text-weight-semibold is-size-3">
+                    Latest stories
+                  </h3>
+                  <div> &nbsp;</div>
+                  <BlogRoll />
+                  <div className="column is-12 has-text-centered">
+                    <Link className="button is-link" to="/blog">
+                      More Stories
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
