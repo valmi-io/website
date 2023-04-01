@@ -6,4 +6,13 @@
   YARN_VERSION = "1.22.4"
   YARN_FLAGS = "--no-ignore-optional"
 
+## This rule redirects to an external API, signing requests with a secret
+[[redirects]]
+  from = "/slack"
+  to = "https://join.slack.com/t/valmiioworkspace/shared_invite/zt-1s2uy2gtt-Op4PYzcDsWKPKhUby71~Og"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
+  signed = "API_SIGNATURE_TOKEN"
+
 

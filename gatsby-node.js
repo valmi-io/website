@@ -3,8 +3,7 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
-
+  const { createPage, createRedirect } = actions
   return graphql(`
     {
       allMarkdownRemark(limit: 1000) {

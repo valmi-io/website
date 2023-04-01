@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="container ">
         <div className="navbar-brand ">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Valmi.io" style={{ width: "140px" }} />
+            <img src={logo} alt="valmi.io" style={{ width: "140px" }} />
           </Link>
           {/* Hamburger menu */}
           <button
@@ -60,9 +60,19 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+          <li className="navbar-item" style={{ padding: "0px" }}>
+            <Link className="navbar-item" target="_blank" to="https://docs.valmi.io">
+              Docs
+            </Link>
+          </li>
           <li style={{ padding: "0px" }} className="navbar-item">
             <Link className="navbar-item" to="/blog">
               Blog
+            </Link>
+          </li>
+          <li style={{ padding: "0px" }} className="navbar-item">
+            <Link className="navbar-item" to="/jobs">
+              Jobs
             </Link>
           </li>
           <li className="navbar-item" style={{ padding: "0px" }}>
@@ -80,7 +90,7 @@ const Navbar = () => {
            
            <a
              className="navbar-item"
-             href="https://join.slack.com/t/valmiioworkspace/shared_invite/zt-1s2uy2gtt-Op4PYzcDsWKPKhUby71~Og"
+             href="/slack"
              target="_blank"
              rel="noopener noreferrer"
            >
