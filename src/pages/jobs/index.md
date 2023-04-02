@@ -25,7 +25,7 @@ We are looking for a talented Software Engineer to join our team in building val
 - Familiarity with version control systems such as Git
 - Strong communication skills
 
-### Preferred Qualifications:
+#### Preferred Qualifications:
 
 - Experience with cloud platforms such as AWS or Azure
 - Familiarity with containerization and container orchestration technologies such as Docker and Kubernetes
@@ -57,7 +57,7 @@ We are looking for a skilled React Engineer to join our team in building valmi.i
 - Familiarity with front-end technologies such as HTML, CSS, and JavaScript
 - Strong communication skills
 
-### Preferred Qualifications:
+#### Preferred Qualifications:
 
 - Experience with cloud platforms such as AWS or Azure
 - Familiarity with containerization and container orchestration technologies such as Docker and Kubernetes
